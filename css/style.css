@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: rgb(240, 141, 0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+}
+
+.header .logo {
+    cursor: pointer;
+}
+
+.header .logo img {
+    height: 85px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover {
+    transform: scale(0.9);
+}
+
+.header .nav-links {
+    list-style: none;
+}
+
+.header .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover {
+    transform: scale(1.1);
+}
+
+.header .nav-links a {
+    font-size: 700;
+    color: black;
+    text-decoration: none;
+}
+
+.header .nav-links a:hover {
+    color: white;
+}
+
+.header .nav-links a button {
+    background-color: rgb(240, 141, 0);
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 3px 15px;
+    cursor: pointer;
+}
+
+.header .nav-links a button:hover {
+    color: white;
+}
+
+.mobile-nav .dropdown-toggle {
+    background-color: transparent !important;
+    border: none !important;
+    color: black !important;
+    font-size: 24px;
+}
+
+.dropdown-menu {
+    background-color: rgba(255, 255, 255, 0) !important;
+    backdrop-filter: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.dropdown-menu .dropdown-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: rgba(240, 141, 0, 0.9);
+    color: white;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+main {
+    margin-top: 90px; /* igual o un poco más que la altura del header */
+}
+
+section {
+    min-height: calc(100vh - 40px);
+    border: 1px solid #ccc;
+}
+
+.inicio {
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.inicio .carousel-inner img {
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(0.3);
+   
+}
+
+.inicio .text {
+    align-items: center;
+    text-align: center;
+    border-width: 3px;
+    padding: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 90%;
+
+}
+
+.inicio .text h2 {
+    color: white;
+}
+
+.inicio .text a button {
+    background-color: rgb(240, 141, 0);
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 3px 15px;
+    cursor: pointer;
+}
+
+.inicio .text a button:hover {
+    color: white;
+}
+
+.Menu {
+    background-color: black;
+    padding: 20px;
+}
+
+.Menu h1 {
+    color: rgb(240, 141, 0);
+    text-align: center;
+}
+
+.Menu .card {
+    background-color: rgb(240, 141, 0);
+}
+
+.Menu .card:hover {
+    transform: scale(1.1);
+}
+
+.Nosotros {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(233, 219, 199);
+}
+
+.Nosotros .texto {
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: rgb(240, 141, 0);
+
+}
+
+.Nosotros .texto h2 {
+    text-align: center;
+}
+
+.Nosotros .texto p img {
+    height: 150px;
+    width: auto;
+}
+
+.Nosotros .imagen .card {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: rgb(240, 141, 0);
+
+}
+
+
+.Contacto {
+    background-color: black;
+    padding: 20px;
+}
+
+.Contacto h2 {
+    text-align: center;
+    color: rgb(240, 141, 0);
+}
+
+.Contacto .form .row {
+    display: flex;
+    justify-content: center;
+}
+
+.Contacto .form .row .form-label {
+    color: rgb(240, 141, 0);
+}
+
+.Contacto .btn-enviar {
+    background-color: rgb(240, 141, 0);
+    border: solid 1px;
+    border-radius: 10px;
+    padding: 3px 15px;
+    cursor: pointer;
+}
+
+.Contacto .btn-enviar:hover {
+    color: white;
+}
+
+.FAQ {
+    background-color: rgb(233, 219, 199);
+    padding: 20px;
+}
+
+.FAQ h2 {
+    text-align: center;
+    color: black;
+}
+
+.FAQ p {
+    text-align: center;
+    color: rgb(240, 141, 0);
+}
+
+.FAQ .card-text {
+    color: rgb(240, 141, 0);
+}
+
+.FAQ .card-title {
+    color: rgb(240, 141, 0);
+}
+
+.FAQ .card {
+    background-color: black;
+}
+
+.FAQ .card:hover {
+    transform: scale(1.1);
+}
+
+.FAQ .card h5 {
+    text-align: center;
+}
+
+
+.Pedido {
+    background-color: black;
+    padding: 20px;
+}
+
+.Pedido h2 {
+    text-align: center;
+    color: rgb(240, 141, 0);
+}
+
+.Pedido .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Pedido .card {
+    background-color: rgb(240, 141, 0);
+}
+
+.Pedido .card:hover {
+    transform: scale(1.1);
+}
+
+.Pedido .card .card-body {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(240, 141, 0);
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.footer .logo {
+    cursor: pointer;
+}
+
+.footer .logo img {
+    height: 85px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.footer .logo img:hover {
+    transform: scale(0.9);
+}
+
+@media (max-width: 768px) {
+
+    body,
+    html {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    header nav ul.nav-links {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    section.Nosotros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    section.Nosotros .texto,
+    section.Nosotros .imagen {
+        width: 100%;
+        padding: 10px 0;
+    }
+    .footer-container {
+    flex-direction: column;
+    gap: 10px;
+    }
+
+    .footer-copy,
+    .footer-mail {
+    font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    .mobile-nav {
+        display: none;
+    }
+
+    section.Nosotros {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 40px;
+    }
+
+    section.Nosotros .texto,
+    section.Nosotros .imagen {
+        width: 48%;
+    }
+    body.solo-inicio .Menu,
+    body.solo-inicio .Nosotros,
+    body.solo-inicio .Contacto,
+    body.solo-inicio .FAQ,
+    body.solo-inicio .Pedido {
+        display: none;
+    }
+}
+.menu-btn {
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 6px 12px;
+  background-color: transparent;
+  color: black;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.menu-btn:hover {
+  color: white;
+  border-color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.menu-btn i {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.menu-btn:hover i {
+  color: white;
+}
+
+.footer-nuevo {
+  background-color: rgb(240, 141, 0);
+  padding: 15px 10%;
+  color: black;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer-logo img {
+  height: 60px;
+  width: auto;
+}
+
+.footer-copy {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer-mail a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.footer-mail a:hover {
+  color: white;
+}
+
+.icononav {
+  border: 2px solid rgb(0, 0, 0);     
+  padding: 5px;             
+  border-radius: 6px;
+}
