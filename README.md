@@ -26,7 +26,3 @@ Diseñado desde cero utilizando **HTML5**, **CSS3** y **JavaScript** puro.
 - Estilos organizados y buenas prácticas de maquetación.
 - Código limpio y comentado.
 
----
-
-## 📂 Estructura del proyecto
-
